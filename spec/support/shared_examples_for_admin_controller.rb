@@ -21,6 +21,7 @@ shared_examples "a protected admin controller" do |controller|
   end
 end
 
+
 shared_examples "a protected singular admin controller" do |controller|
   let(:args) do
     {
