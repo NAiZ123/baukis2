@@ -1,0 +1,13 @@
+<% @title = "職員の新登録" %>
+<h1><%= @title %></h1>
+
+<div id="generic-form">
+  <%= form_with model: @staff_member, url: [ :admin, @staff_member ] do |f| %>
+    <%= render "form", f: f %> <%# (ローカル変数名): (渡す値) %>
+    <div class="buttons">
+      <%= f.submit "登録" %>
+      <%= link_to "キャンセル", :admin_staff_members %>
+    </div>
+  <% end %>
+</div>
+
